@@ -1,0 +1,306 @@
+"Welcome to [Photographer's Name], where every click captures a moment, every frame tells a story. We invite you to embark on a visual journey through our lens. Whether it's the radiant glow of a wedding day or the subtle charm of everyday life, we're here to immortalize those cherished moments."
+
+
+
+About Us
+Welcome to [Your Photography Business Name], where we specialize in capturing life's most precious moments through stunning imagery.
+
+Our team of passionate photographers is dedicated to delivering exceptional results with a personalized touch. With a keen eye for detail and a commitment to excellence, we strive to create timeless memories that you'll cherish for a lifetime.
+
+From weddings and portraits to events and landscapes, we approach each project with creativity, professionalism, and a genuine love for our craft.
+
+Contact us today to learn more about our services and how we can help bring your vision to life.
+
+
+SERVICES
+"From weddings to birthdays, and every cherished moment in between, let us capture the magic of your life's celebrations with our creative and professional photography services."
+
+CONTACT
+"Reach out to us now and let's start creating unforgettable memories together."
+
+import React, { useState } from 'react';
+
+const ContactUs = () => {
+  // State variables to store form data
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [instagramId, setInstagramId] = useState('');
+  const [experience, setExperience] = useState('');
+
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here, like sending data to backend or displaying a message
+    console.log({ name, email, instagramId, experience });
+    // Reset form fields after submission
+    setName('');
+    setEmail('');
+    setInstagramId('');
+    setExperience('');
+  };
+
+  return (
+    <div>
+      <h2>Contact Us</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Photographer Name:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="instagramId">Instagram ID:</label>
+          <input
+            type="text"
+            id="instagramId"
+            value={instagramId}
+            onChange={(e) => setInstagramId(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="experience">Experience (years):</label>
+          <input
+            type="number"
+            id="experience"
+            value={experience}
+            onChange={(e) => setExperience(e.target.value)}
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+};
+
+export default ContactUs;
+
+
+
+
+BOOK NOW
+import React, { useState } from 'react';
+
+const BookNow = () => {
+  // State variables to store form data
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [eventType, setEventType] = useState(''); // wedding, pre-wedding, etc.
+  const [shootPlace, setShootPlace] = useState(''); // Hyderabad, Delhi, etc.
+  const [fromDate, setFromDate] = useState('');
+  const [toDate, setToDate] = useState('');
+  const [contactNumber, setContactNumber] = useState('');
+
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here, like sending data to backend or displaying a message
+    console.log({ fullName, email, eventType, shootPlace, fromDate, toDate, contactNumber });
+    // Reset form fields after submission
+    setFullName('');
+    setEmail('');
+    setEventType('');
+    setShootPlace('');
+    setFromDate('');
+    setToDate('');
+    setContactNumber('');
+  };
+
+  return (
+    <div>
+      <h2>Book Now</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="eventType">Event Type:</label>
+          <select
+            id="eventType"
+            value={eventType}
+            onChange={(e) => setEventType(e.target.value)}
+            required
+          >
+            <option value="">Select Event Type</option>
+            <option value="wedding">Wedding</option>
+            <option value="pre-wedding">Pre-Wedding</option>
+            <option value="house-warming">House Warming Ceremony</option>
+            <option value="birthday">Birthday</option>
+            <option value="other">Other Ceremonies</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="shootPlace">Shoot Place:</label>
+          <select
+            id="shootPlace"
+            value={shootPlace}
+            onChange={(e) => setShootPlace(e.target.value)}
+            required
+          >
+            <option value="">Select Shoot Place</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Vizag">Vizag</option>
+            <option value="Mumbai">Mumbai</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="fromDate">From Date:</label>
+          <input
+            type="date"
+            id="fromDate"
+            value={fromDate}
+            onChange={(e) => setFromDate(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="toDate">To Date:</label>
+          <input
+            type="date"
+            id="toDate"
+            value={toDate}
+            onChange={(e) => setToDate(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="contactNumber">Contact Number:</label>
+          <input
+            type="text"
+            id="contactNumber"
+            value={contactNumber}
+            onChange={(e) => setContactNumber(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+};
+
+export default BookNow;
+
+
+
+SERVICES
+import React, { useState } from 'react';
+
+const ServiceSection = () => {
+  const [activeSection, setActiveSection] = useState('wedding');
+
+  const handleSectionClick = (section) => {
+    setActiveSection(section);
+  };
+
+  // Sample images for each section
+  const weddingImages = [
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+  ];
+
+  const preWeddingImages = [
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+  ];
+
+  const birthdayImages = [
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+  ];
+
+  const shootLocationsImages = [
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+  ];
+
+  const otherCeremoniesImages = [
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150',
+  ];
+
+  return (
+    <div>
+      <h2>Service Section</h2>
+      <div>
+        <button onClick={() => handleSectionClick('wedding')}>Wedding</button>
+        <button onClick={() => handleSectionClick('preWedding')}>Pre-Wedding</button>
+        <button onClick={() => handleSectionClick('birthday')}>Birthday</button>
+        <button onClick={() => handleSectionClick('shootLocations')}>Shoot Locations</button>
+        <button onClick={() => handleSectionClick('otherCeremonies')}>Other Ceremonies</button>
+      </div>
+      <div>
+        {activeSection === 'wedding' && (
+          // Display images related to wedding
+          <div>
+            <h3>Wedding Images</h3>
+            {weddingImages.map((image, index) => (
+              <img key={index} src={image} alt={`Wedding Image ${index}`} />
+            ))}
+          </div>
+        )}
+        {activeSection === 'preWedding' && (
+          // Display images related to pre-wedding
+          <div>
+            <h3>Pre-Wedding Images</h3>
+            {preWeddingImages.map((image, index) => (
+              <img key={index} src={image} alt={`Pre-Wedding Image ${index}`} />
+            ))}
+          </div>
+        )}
+        {/* Add similar conditional rendering for other sections */}
+      </div>
+    </div>
+  );
+};
+
+export default ServiceSection;
