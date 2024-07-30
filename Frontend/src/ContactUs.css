@@ -1,0 +1,143 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-image: url('/mini/house/about8.jpg') !important; */
+    /* background-image: url('/mini/saree/a10.jpg') !important; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-color: rgb(255, 242, 230) !important; */
+  }
+ .bgimage{
+  background-image: url('/mini/wedding/c3.jpeg') !important; 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+ }
+ @media only screen and (max-width: 768px) {
+  .bgimage {
+    background-size: cover; /* or any other size suitable for tablets */
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+  }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 480px) {
+  .bgimage {
+    background-size: contain; /* or any other size suitable for mobile devices */
+    /* You can also adjust other properties such as background-position */
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+  }
+}
+ .whatsapp-logo {
+  margin-top: 0px;
+  width: 30px;
+  /* Adjust size as needed */
+  height: 30px;
+  margin-left:30px;
+  margin-bottom: 4px;
+  /* Adjust size as needed */
+}
+.insta-logo{
+  margin-top: 10px;
+  width: 35px;
+  /* Adjust size as needed */
+  height: 35px;
+  margin-left:30px;
+}
+.face-logo{
+  margin-top: 10px;
+  width: 50px;
+  /* Adjust size as needed */
+  height: 35px;
+  margin-left:30px;
+}
+.about {
+    /* margin-top: 20px; */
+    position: relative;
+    top: -60px; 
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+    max-height: 800px; 
+  
+    /* overflow-y: auto; */
+  }
+  
+  .about-details {
+    flex: 1;
+    margin-right: 0px;
+    /* position:relative;
+    top:-30px; */
+    margin-left:300px;
+    margin-bottom:-20px;
+  }
+  
+  .about-details h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-left:-30px;
+  }
+  
+  .details {
+    font-size: 16px;
+    justify-content: space-between;
+    position:relative;
+    top:-20px;
+  }
+  
+  .detail {
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-indent:20px; 
+    font-size:18px;
+    font-style:calc(2);
+  }
+  
+  .detail strong {
+    font-weight: bold;
+  }
+  
+  .photographer-image img {
+    width: 40%;
+    max-width: 400px; 
+    height:80%;
+    margin-left: -100px;
+    float: left;
+    margin-right:250px;
+    border-radius: 5px;
+  }
+  .photographer-image:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .other-collections{
+    margin-top: -80px;
+    margin-bottom:0px;
+  }
+  .h2other{
+    /* margin-left: 500px; */
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .carouselimg{
+    width:350px;
+    height:250px;
+    margin-right: 20px;
+  }
+  .slider-container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the slider */
+    margin-top:50px;
+    flex-wrap: wrap;
+}
+/* Target the slider component directly */
+.slick-slide {
+  margin-right: 30px; /* Adjust this value to set the desired gap between images */
+}
+
