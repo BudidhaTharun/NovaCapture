@@ -38,4 +38,4 @@ Admin Dashboard: Admin can log in to view all bookings.
 
 **Contact**
 
-For any inquiries, please contact us at srinijamayoju@gmail.com.
+For any inquiries, please contact us at Tharunbudidha@gmail.com.
