@@ -1,0 +1,21 @@
+.backbut{
+    height:30px;
+    width:120px;
+    padding-top: 5px;
+    padding-left: 10px;
+    /* padding: 10px; */
+    margin-left: 50px;
+    margin-top:10px;
+  
+    background-color: grey;
+  }
+h3{
+    /* text-align: center; */
+    margin-top: 15px;
+    margin-left: 500px;
+    font-family: light italic;
+}
+.piechart{
+    margin-top: 10px;
+    align-items: center;
+}

@@ -1,0 +1,160 @@
+/* HomePage.css */
+
+/* Set the height of the viewport to 100vh (viewport height) */
+html,
+body,
+#root {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    /* overflow-y: hidden; */
+    /* object-fit: cover; */
+    /* background-image: url('/mini/bg4.jpeg') !important; */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a.active {
+    color: #ffcc00;
+    /* Change color for active link */
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('/mini/saree/h8.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    /* height: calc(100vh - 40px); */
+    /* height: 100vh; */
+    /* Adjust navbar height */
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* .hero-content {
+    text-align: left;
+    padding-left: 20px; 
+    padding-right: 20px; 
+} */
+.hero-content {
+    text-align: left;
+    /* max-width: 650px; Set maximum width for the content */
+    margin-left: 10px; /* Center content horizontally */
+    padding-left: 20px; 
+    padding-right: 20px; 
+    flex:1;
+    line-height: 1.8;
+}
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 150px;
+    opacity: 0;
+    /* Apply transition for smooth animation */
+    transition: opacity 2s ease-in-out;
+    /* margin-left: 20px; */
+    color:black;
+    font-family: italic light bold;
+}
+
+
+/* Define animation to fade in the text */
+/* @keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+} */
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+/* Apply animation to the h1 element */
+.hero-content h1.animated {
+    /* animation: fadeIn 3s ease-in-out forwards;  */
+    animation: bounceIn 1.5s ease-in-out forwards;
+
+}
+
+.hero-content h3 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Button styles */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}

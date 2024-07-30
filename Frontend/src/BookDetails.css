@@ -1,0 +1,94 @@
+/* Style the table */
+.bd{
+  background-color:#f0f0f0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style table header */
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style table header cells */
+  th {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Style table body cells */
+  td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style alternate rows */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect */
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Highlight first column */
+  tbody td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Responsive table */
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    thead {
+      display: none;
+    }
+    tr {
+      border-bottom: 2px solid #ddd;
+      display: block;
+      margin-bottom: 20px;
+    }
+    td {
+      border-bottom: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+  
+ .progress h2{
+    /* text-align: center; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: italic light;
+    margin-left: 500px;
+    font-style:  bold;
+}  
+.progress{
+  display: flex;
+  align-items: center !important;
+}
+.progbut{
+  height:30px;
+  width:120px;
+  padding-top: 5px;
+  padding-left: 10px;
+  /* padding: 10px; */
+  margin-left: 50px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  background-color: green;
+}
